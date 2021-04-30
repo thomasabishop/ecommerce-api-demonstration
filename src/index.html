@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="root">
+      <nav class="navbar navbar-light bg-light Navbar">
+        <a class="navbar-brand" href="#">Eschmann e-commerce demonstration</a>
+      </nav>
+      <div class="container-fluid">
+        <div class="row Page">
+          <!-- Faceted navigation -->
+          <div class="col-md-3 bg-light p-4 FilterBar">
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              id="RenderButton"
+            >
+              Populate all data
+            </button>
+          </div>
+          <!-- Data output -->
+          <div class="col-md-9 p-4">
+            <div class="CustomRow" id="ProductGrid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.Page {
+  height: 100vh;
+}
+
+.Navbar {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.Product {
+  background: #eee;
+  border: gray;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.Product > p.ProductDescription {
+  font-size: 14px;
+}
+
+/* Create custom grid so that products can be added dynamically whilst maintaining 4col structure. (Bootstrap makes this difficult with dynamic data as you keep having to add `row` divs.)
+*/
+
+.CustomRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
