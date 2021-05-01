@@ -12,13 +12,97 @@
         <div class="row Page">
           <!-- Faceted navigation -->
           <div class="col-md-3 bg-light p-4 FilterBar">
-            <button
-              type="button"
-              class="btn btn-primary btn-sm"
-              id="RenderButton"
-            >
-              Populate all data
-            </button>
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  id="RenderButton"
+                >
+                  Populate all data
+                </button>
+                <div class="mt-4 pt-2">
+                  <form>
+                    <h2 class="h5">Filters</h2>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Men's clothing
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Women's clothing
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Jewelry
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Electronics
+                      </label>
+                    </div>
+                    <div class="mt-4 pt-2">
+                      <h2 class="h5">Sort</h2>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Ascending
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2">
+                          Descending
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Data output -->
           <div class="col-md-9 p-4">

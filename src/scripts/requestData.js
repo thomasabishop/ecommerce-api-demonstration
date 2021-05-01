@@ -22,8 +22,8 @@ export async function queryEcommerceApi(endpoint) {
       throw new Error(`HTTP error. Status = ${response.status}`);
     } else {
       let data = await response.json();
-      //return data;
-      console.log(data);
+      return data;
+      //console.log(data);
     }
   } catch (error) {
     console.error(error);

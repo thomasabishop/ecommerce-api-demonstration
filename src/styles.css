@@ -1,3 +1,8 @@
+/* 
+ * Custom styles (denoted by PascalCase) 
+ *
+ * */
+
 .Page {
   height: 100vh;
 }
@@ -17,10 +22,24 @@
   font-size: 14px;
 }
 
-/* Create custom grid so that products can be added dynamically whilst maintaining 4col structure. (Bootstrap makes this difficult with dynamic data as you keep having to add `row` divs.)
-*/
+.Product > .ProductImage {
+  max-height: 130px;
+}
+
+/* Create custom grid so that products can be added dynamically whilst maintaining responsive structure */
 
 .CustomRow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* 
+ * Bootstrap overrides/alterations
+ *
+ * */
+
+/* When a Button has the Bootstrap class `.disabled`, ensure that the button is fully deactivated */
+
+.disabled {
+  pointer-events: none;
 }
