@@ -37,7 +37,6 @@ module.exports = {
   ],
   module: {
     rules: [
-      //  Specify JS compilation. We are using Babel as the loader to ensure I can use useful ES6 syntax such as ES modules in development. But that's just for my tooling, everything else will be set to ES5 JS so that it can be copy and pasted into the Umbraco context without worrying about compatibility accross browsers.
       {
         test: /\.js$/,
         exclude: /node_modules/,
