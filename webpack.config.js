@@ -1,12 +1,3 @@
-/*
- * This is a minimal Webpack config file.
- * It compiles code in the /src dir to the /dist dir.
- * For this project we do not need a production build since the project only exists for the purposes of demonstration, however I have included a build /dir, just for ensuring browser compatibility when writing the custom Javascript
- * In order to view the output we only need a development server. This runs when you issue `npm start`. It serves the Webpack bundle (configured below) from memory.
- * This serves a basic no-frills frontend set-up: HTML, CSS, and JavaScript, along with importing Bootstrap 4 as this is the framework you will be using
- * It includes source mapping so that you can analyse the runtime code using the browser's development tools
- * If you want to generate a production build, just run `npm run build`
- */
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

@@ -1,11 +1,16 @@
 # Frontend e-commerce demonstrations
 
-This project exists to demonstrate how to create the following functionality using vanilla Javascript, Bootstrap 4 and an ecommerce API:
-* Query an API and populate product listings
-* Send requests to API using query parameters derived from faceted navigation
-* Sort and filter returned results 
-* Add products to a cart
-* Display spinner/loading interface whilst asynchronous requests are populated 
+This project exists to demonstrate how to create the following functionality using vanilla Javascript, Bootstrap 4 and an e-commerce API:
+
+| Feature      | Current status |
+| ----------- | ----------- |
+|  Query an API and populate product listings| Complete      |
+|  Send requests to API using query parameters derived from faceted navigation | Pending        |
+|  Sort and filter returned results  |  Pending     |
+|  Add products to a cart, update cart |  Pending     |
+|  Display spinner/loading interface whilst asynchronous requests are populated  | Pending      |
+|  Display x number of products by page, provide pagination | Pending       |
+
 
 ## Running the project 
 ```
@@ -14,8 +19,13 @@ npm install
 npm start
 ```
 
+### Run test suite
+```
+npm run test 
+```
+
 ## Products API 
-The demo makes use of a spoof ecommerce API [link] to simulate the functionality you will be creating with your own API within Umbraco. You should be able to swap out variables in the demo code with your own endpoint and authentication token. (I can assist with the implementation.)
+The demo makes use of the [Fake Store API](https://fakestoreapi.com/) to simulate the functionality you will be creating with your own API within Umbraco. You should be able to swap out variables in the demo code with your own endpoint and authentication token. (I can assist with the implementation.)
 
 ### Javascript
 Everything is written as functions. That way you can just copy and paste into your own environment. I use modular imports/exports for readability but I imagine you can just add the functions as a block to your Umbraco scripts file. 
