@@ -12,6 +12,5 @@ export function renderProducts(data) {
     parentElement.appendChild(wrapper);
   }
 
-  // Have added a delay, so that you will always see the spinner effect and to simulate slower networks
   data.map((datum) => domInsert(productGrid, productTemplate(datum)));
 }
