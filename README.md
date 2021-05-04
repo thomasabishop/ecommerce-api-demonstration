@@ -1,27 +1,26 @@
-# Eschmann frontend e-commerce demonstrations
+# Frontend e-commerce demonstrations
 
-This project exists to demonstrate how to create a filterable product listing on the front end using Javascript. 
-
-## Composition
-It uses Webpack to create a development environment but it is intended that the source files are interoperable with standard frontend technologies: HTML, CSS, JS. It includes Bootstrap 4, both the JavaScript modules and styles, as this is the frameworkyou intend to use within Umbraco. It includes jQuery as a dependency, but this is only for the external Bootstrap modules you may like to use. The JavaScript I have written does not use jQuery. 
-
-All JavaScript in the ```src/` directory is written in ES5.
-
-Explanatory comments are included throughout along with JSDocs documentation for functions etc.
+This project exists to demonstrate how to create the following functionality using vanilla Javascript, Bootstrap 4 and an ecommerce API:
+* Query an API and populate product listings
+* Send requests to API using query parameters derived from faceted navigation
+* Sort and filter returned results 
+* Add products to a cart
+* Display spinner/loading interface whilst asynchronous requests are populated 
 
 ## Running the project 
+```
 git clone ..
 npm install
 npm start
+```
 
-For this project we do not need a production build since the project only exists for the purposes of demonstration, however I have included a build dir (/dist), just for ensuring browser compatibility when writing the custom Javascript. If you want to generate a production build, just issue `npm run build` from the terminal.
+## Products API 
+The demo makes use of a spoof ecommerce API [link] to simulate the functionality you will be creating with your own API within Umbraco. You should be able to swap out variables in the demo code with your own endpoint and authentication token. (I can assist with the implementation.)
 
-In order to view the output we only need a development server. This runs when you issue `npm start`. It:
-* serves the Webpack bundle from memory
-* provides source mapping so that you can examine the runtime code using the browser's developer tools
-* provides hot-reloading, so that changes to the JS and CSS will render on save 
+### Javascript
+Everything is written as functions. That way you can just copy and paste into your own environment. I use modular imports/exports for readability but I imagine you can just add the functions as a block to your Umbraco scripts file. 
+Each function has full documentation and is unit tested. 
+The entrypoint is `index.js` and the individual functions live in `/scripts`. 
 
-## Spoof products API 
-
-
-
+##  Styles
+The demo uses Bootstrap 4 as this is the framework you intend to use. In a few cases, such as the product listing grid, I have had to augment the Bootstrap inline attributes with custom CSS. This is because Bootstrap doesn't handle dynamically-generated content particularly well. It's minimal and you can just copy and paste the CSS or use your own Umbraco-based grid layout. 
