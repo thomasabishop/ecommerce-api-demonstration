@@ -7,7 +7,7 @@
  * @return {Promise} : a pending Promise object that will either resolve or reject the request
  */
 
-export async function queryEcommerceApi(endpoint) {
+export default async function queryEcommerceApi(endpoint) {
   // Root URL of the API;
   const fakeStore = 'https://fakestoreapi.com/';
   //  Concatenate root URL with request string:
