@@ -1,5 +1,7 @@
 # Frontend e-commerce demonstrations
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7fd7e5f-a506-40d1-848b-be84e1ef0f8b/deploy-status)](https://app.netlify.com/sites/gallant-kalam-86478c/deploys)
+
 This project exists to demonstrate how to create the following functionality using vanilla Javascript, Bootstrap 4 and an e-commerce API:
 
 | Feature      | Current status |  Time estimate |
@@ -20,10 +22,15 @@ npm install
 npm start
 ```
 
-### Run test suite
+## Run test suite
 ```
 npm run test 
 ```
+
+## View live demo
+
+A staging version of the project can be viewed here:
+[https://gallant-kalam-86478c.netlify.app/](https://gallant-kalam-86478c.netlify.app/)
 
 ## Products API 
 The demo makes use of the [Fake Store API](https://fakestoreapi.com/) to simulate the functionality you will be creating with your own API within Umbraco. You should be able to swap out variables in the demo code with your own endpoint and authentication token. (I can assist with the implementation.)
