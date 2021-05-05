@@ -9,7 +9,8 @@ This project exists to demonstrate how to create the following functionality usi
 |  Sort and filter returned results  |  Pending     | 1 day |
 |  Add products to a cart, update cart |  Pending     | 2 days | 
 |  Display spinner/loading interface whilst asynchronous requests are populated  | In progress     | < 1 day |
-|  Display x number of products by page, provide pagination | Pending, need more info       | ...
+|  Display x number of products by page, provide pagination | Pending, need more info       | ...|
+|  Conditionally render filters based on product type | Pending   | ...|
 
 
 ## Running the project 
